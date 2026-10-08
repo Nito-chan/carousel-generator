@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5 Website Improvements That Build Trust — Nito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+
+  <!-- ===== TOOLBAR ===== -->
+  <div class="toolbar">
+    <div class="toolbar-inner">
+      <div class="toolbar-left">
+        <span class="toolbar-brand">Nito</span>
+        <span class="toolbar-sep">|</span>
+        <span class="toolbar-label">Post 1 — 7 slides</span>
+      </div>
+      <div class="toolbar-right">
+        <button class="toolbar-btn" onclick="downloadAll()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download All
+        </button>
+        <span class="toolbar-progress" id="progress"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel">
+
+    <!-- ===== SLIDE 1 — Cover ===== -->
+    <div class="slide-wrapper">
+      <span class="slide-count">1 / 7</span>
+      <div class="slide">
+        <div class="content" style="text-align:center;align-items:center;">
+          <div class="cover-badge">
+            <span class="cover-badge-dot"></span>
+            QUICK WEBSITE CHECKLIST
+          </div>
+          <h1>
+            5 Things Your Website<br />
+            <span class="highlight">Needs to Build Trust</span><br />
+            With Every Visitor
+          </h1>
+          <p class="body-text" style="max-width:500px;font-size:18px;color:var(--text-muted);">
+            Small tweaks that can make a big difference in how people see your business.
+          </p>
+          <div class="swipe-row">
+            <span class="swipe-text">SWIPE TO SEE THEM</span>
+            <span class="swipe-line"></span>
+          </div>
+        </div>
+        <div class="branding">
+          <span class="branding-dot"></span>
+          <span class="branding-text">Nito &nbsp;·&nbsp; @nitodev.official</span>
+        </div>
+        <div class="page-indicator">
+          <span class="page-dot active"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 2 — Slow Loading Speed ===== -->
+    <div class="slide-wrapper">
+      <span class="slide-count">2 / 7</span>
+      <div class="slide">
+        <div class="content">
+          <div class="split">
+            <div class="split-left">
+              <div class="cover-badge" style="margin-bottom:12px;">
+                <span class="cover-badge-dot"></span>
+                TIP 1 OF 5
+              </div>
+              <h2>Make It Load<br class="hide-desktop"/> Fast</h2>
+              <div class="divider"></div>
+              <p class="body-text">
+                People expect websites to load instantly. Even a short delay can cause visitors to leave before they see what you offer.
+              </p>
+            </div>
+            <div class="split-right">
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-url">yourwebsite.com</span>
+                </div>
+                <div class="browser-body">
+                  <div class="spinner"></div>
+                  <div class="loading-bar">
+                    <div class="loading-bar-fill"></div>
+                  </div>
+                  <div class="browser-line"></div>
+                  <div class="browser-line short"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="branding">
+          <span class="branding-dot"></span>
+          <span class="branding-text">Nito &nbsp;·&nbsp; @nitodev.official</span>
+        </div>
+        <div class="page-indicator">
+          <span class="page-dot"></span>
+          <span class="page-dot active"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 3 — Clear CTA ===== -->
+    <div class="slide-wrapper">
+      <span class="slide-count">3 / 7</span>
+      <div class="slide">
+        <div class="content">
+          <div class="split">
+            <div class="split-left">
+              <div class="cover-badge" style="margin-bottom:12px;">
+                <span class="cover-badge-dot"></span>
+                TIP 2 OF 5
+              </div>
+              <h2>Guide Visitors<br class="hide-desktop"/> to the Next Step</h2>
+              <div class="divider"></div>
+              <p class="body-text">
+                Every page should make it obvious what to do next. A clear button can be the difference between a visitor leaving and becoming a customer.
+              </p>
+              <div class="examples">
+                <span class="example-tag">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                  Book Now
+                </span>
+                <span class="example-tag">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                  Get a Quote
+                </span>
+                <span class="example-tag">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                  Contact Us
+                </span>
+              </div>
+            </div>
+            <div class="split-right">
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-url">yourwebsite.com</span>
+                </div>
+                <div class="browser-body">
+                  <div class="browser-line" style="width:70%;"></div>
+                  <div class="browser-line short"></div>
+                  <div class="browser-line" style="width:55%;"></div>
+                  <div class="browser-line tall"></div>
+                  <div class="browser-line short"></div>
+                  <div style="margin-top:6px;width:120px;height:32px;border-radius:6px;border:2px dashed rgba(249,115,22,0.3);display:flex;align-items:center;justify-content:center;">
+                    <span style="font-size:9px;color:var(--accent);font-weight:600;">ADD A BUTTON</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="branding">
+          <span class="branding-dot"></span>
+          <span class="branding-text">Nito &nbsp;·&nbsp; @nitodev.official</span>
+        </div>
+        <div class="page-indicator">
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot active"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 4 — Mobile ===== -->
+    <div class="slide-wrapper">
+      <span class="slide-count">4 / 7</span>
+      <div class="slide">
+        <div class="content">
+          <div class="split">
+            <div class="split-left">
+              <div class="cover-badge" style="margin-bottom:12px;">
+                <span class="cover-badge-dot"></span>
+                TIP 3 OF 5
+              </div>
+              <h2>Optimise for<br class="hide-desktop"/> Mobile</h2>
+              <div class="divider"></div>
+              <p class="body-text">
+                Most people browse on their phones. If your site isn't easy to use on mobile, you could be turning away visitors without realising it.
+              </p>
+            </div>
+            <div class="split-right">
+              <div class="phone-mockup phone-bad">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div class="phone-header">
+                    <div class="phone-signal">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <span class="phone-time">9:41</span>
+                  </div>
+                  <div class="phone-content-wrapper">
+                    <div class="phone-content">
+                      <div class="phone-line"></div>
+                      <div class="phone-line"></div>
+                      <div class="phone-line"></div>
+                      <div class="phone-line"></div>
+                      <div class="phone-block"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="phone-home"></div>
+                <div class="phone-bad-label">HARD TO<br/>TAP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="branding">
+          <span class="branding-dot"></span>
+          <span class="branding-text">Nito &nbsp;·&nbsp; @nitodev.official</span>
+        </div>
+        <div class="page-indicator">
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot active"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 5 — Design ===== -->
+    <div class="slide-wrapper">
+      <span class="slide-count">5 / 7</span>
+      <div class="slide">
+        <div class="content">
+          <div class="split">
+            <div class="split-left">
+              <div class="cover-badge" style="margin-bottom:12px;">
+                <span class="cover-badge-dot"></span>
+                TIP 4 OF 5
+              </div>
+              <h2>Keep Your<br class="hide-desktop"/> Design Fresh</h2>
+              <div class="divider"></div>
+              <p class="body-text">
+                Your website is often the first impression people get of your business. A clean, modern design helps build trust instantly.
+              </p>
+            </div>
+            <div class="split-right">
+              <div class="comparison">
+                <div class="comp-card">
+                  <span class="comp-label old">BEFORE</span>
+                  <div class="comp-site">
+                    <div class="comp-nav">
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="comp-hero old-hero"></div>
+                    <div class="comp-row"><span></span><span></span></div>
+                    <div class="comp-row"><span></span><span></span></div>
+                    <div style="margin-top:4px;height:20px;border-radius:3px;background:rgba(0,0,0,0.02);"></div>
+                  </div>
+                </div>
+                <span class="comp-arrow">→</span>
+                <div class="comp-card">
+                  <span class="comp-label new">AFTER</span>
+                  <div class="comp-site">
+                    <div class="comp-nav">
+                      <span style="background:rgba(249,115,22,0.15);"></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="comp-hero new-hero"></div>
+                    <div class="comp-row"><span style="background:rgba(0,0,0,0.06);"></span><span style="background:rgba(0,0,0,0.06);"></span></div>
+                    <div class="comp-row"><span style="background:rgba(0,0,0,0.04);"></span><span style="background:rgba(0,0,0,0.04);"></span></div>
+                    <div style="margin-top:4px;height:20px;border-radius:3px;background:linear-gradient(135deg,rgba(249,115,22,0.2),rgba(245,158,11,0.15));display:flex;align-items:center;justify-content:center;">
+                      <span style="font-size:7px;color:var(--accent);font-weight:700;">CTA</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="branding">
+          <span class="branding-dot"></span>
+          <span class="branding-text">Nito &nbsp;·&nbsp; @nitodev.official</span>
+        </div>
+        <div class="page-indicator">
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot active"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 6 — Navigation ===== -->
+    <div class="slide-wrapper">
+      <span class="slide-count">6 / 7</span>
+      <div class="slide">
+        <div class="content">
+          <div class="split">
+            <div class="split-left">
+              <div class="cover-badge" style="margin-bottom:12px;">
+                <span class="cover-badge-dot"></span>
+                TIP 5 OF 5
+              </div>
+              <h2>Simplify Your<br class="hide-desktop"/> Navigation</h2>
+              <div class="divider"></div>
+              <p class="body-text">
+                Visitors should find what they need in just a couple of taps. The easier your site is to navigate, the more time people will spend on it.
+              </p>
+            </div>
+            <div class="split-right">
+              <div class="nav-flow-vertical">
+                <div class="nav-box active">Home</div>
+                <div class="nav-line-down"></div>
+                <div class="nav-box">Services</div>
+                <div class="nav-line-down"></div>
+                <div class="nav-box">Book Now</div>
+                <div style="margin-top:10px;font-size:10px;color:var(--text-muted);font-weight:500;letter-spacing:0.3px;">
+                  3 taps → done ✓
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="branding">
+          <span class="branding-dot"></span>
+          <span class="branding-text">Nito &nbsp;·&nbsp; @nitodev.official</span>
+        </div>
+        <div class="page-indicator">
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot active"></span>
+          <span class="page-dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 7 — CTA ===== -->
+    <div class="slide-wrapper">
+      <span class="slide-count">7 / 7</span>
+      <div class="slide">
+        <div class="content" style="text-align:center;align-items:center;">
+          <div class="cover-badge">
+            <span class="cover-badge-dot"></span>
+            I CAN HELP
+          </div>
+          <div class="cta-question">
+            Want to make sure your<br />website checks all the boxes?
+          </div>
+          <p class="cta-text">
+            I'll take a quick look at your website and send you a few friendly suggestions — no pressure, just practical advice.
+          </p>
+          <div class="cta-card">
+            <button class="cta-button">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
+              Send me a DM
+            </button>
+            <p class="cta-sub">Just say "check" — I'll take it from there.</p>
+          </div>
+        </div>
+        <div class="branding">
+          <span class="branding-dot"></span>
+          <span class="branding-text">Nito &nbsp;·&nbsp; @nitodev.official &nbsp;·&nbsp; nito.dpdns.org</span>
+        </div>
+        <div class="page-indicator">
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot active"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="preview-note">
+    Click <strong>Download All</strong> above to save each slide as a PNG, then upload to Instagram in order.
+  </p>
+
+  <script>
+    function downloadSlide(el, index) {
+      const originalOverflow = el.style.overflow;
+      el.style.overflow = 'hidden';
+      return html2canvas(el, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: null,
+        width: 1080,
+        height: 1080,
+        onclone: (doc) => {
+          const slide = doc.querySelector('.slide');
+          if (slide) {
+            slide.style.width = '1080px';
+            slide.style.height = '1080px';
+          }
+        }
+      }).then((canvas) => {
+        el.style.overflow = originalOverflow;
+        const link = document.createElement('a');
+        link.download = `post-1-slide-${index}.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      });
+    }
+
+    async function downloadAll() {
+      const slides = document.querySelectorAll('.slide-wrapper');
+      const progress = document.getElementById('progress');
+      for (let i = 0; i < slides.length; i++) {
+        const wrapper = slides[i];
+        const slideEl = wrapper.querySelector('.slide');
+        progress.textContent = `Exporting ${i + 1} / ${slides.length}...`;
+        await downloadSlide(slideEl, i + 1);
+        await new Promise(r => setTimeout(r, 400));
+      }
+      progress.textContent = 'Done ✓';
+      setTimeout(() => { progress.textContent = ''; }, 3000);
+    }
+  </script>
+
+</body>
+</html>
